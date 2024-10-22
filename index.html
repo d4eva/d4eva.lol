@@ -1,0 +1,281 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR33NED 0UT</title>
+    <style>
+        body {
+            background-color: #57834c;
+            color: #a4e2b4;
+            font-family: "Courier New", Courier, monospace;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        header {
+            background-image: url("https://auto.creavite.co/api/out/sva3sb9L3hWIslo9y5_standard.webm");
+            background-repeat: repeat-x;
+            background-position: bottom center;
+            padding: 50px;
+            border-bottom: 2px solid #460846;
+            color: #a4e2b4;
+            font-weight: bold;
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 0 0 10px #000, 0 0 15px #000;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #a4e2b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            border-bottom: 2px solid #692a2a;
+        }
+
+        nav a:hover {
+            color: #a4e2b4;
+            border-bottom: 2px solid #692a2a;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #57834c;
+            border: 2px solid #692a2a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #585757;
+        }
+
+        h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #d281f1, 0 0 15px #d591db;
+        }
+
+        ul {
+            list-style: square;
+            padding: 0 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #a4e2b4;
+            background-color: #57834c;
+            padding: 10px;
+        }
+
+        .marquee {
+            background-color: #57834c;
+            color: #a4e2b4;
+            font-size: 2em;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .marquee-content {
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .highlight {
+            background-color: #57834c;
+            color: #a4e2b4;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social a {
+            margin: 0 10px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #434347;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ffffff;
+            width: 750px;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .project p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            color: #a4e2b4;
+            text-decoration: none;
+        }
+        .btn-donate {
+            --clr-font-main: hsla(0 0% 20% / 100);
+            --btn-bg-1: #85b180;
+            --btn-bg-2: #57834c;
+            --btn-bg-color: #a4e2b4;
+            --radii: 0.5em;
+            cursor: pointer;
+            padding: 0.9em 1.4em;
+            min-width: 120px;
+            min-height: 44px;
+            font-size: var(--size, 1rem);
+            font-weight: 500;
+            transition: 0.8s;
+            background-size: 280% auto;
+            background-image: linear-gradient(
+                325deg,
+                var(--btn-bg-2) 0%,
+                var(--btn-bg-1) 55%,
+                var(--btn-bg-2) 90%
+            );
+            border: none;
+            border-radius: var(--radii);
+            color: var(--btn-bg-color);
+            box-shadow:
+                0px 0px 20px #47b8ff80,
+                0px 5px 5px -1px #3a7de940,
+                inset 4px 4px 8px #afe6ff80,
+                inset -4px -4px 8px #135fd859;
+            }
+
+            .btn-donate:hover {
+            background-position: right top;
+            }
+
+            .btn-donate:is(:focus, :focus-visible, :active) {
+            outline: none;
+            box-shadow:
+                0 0 0 3px var(--btn-bg-color),
+                0 0 0 6px var(--btn-bg-2);
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+            .btn-donate {
+                transition: linear;
+            }
+            }
+
+    </style>
+<script src="chrome-extension://mgijmfgdpljgnhcmokgeokdibogckgoj/injectIneligible.js"></script></head>
+<body>
+
+<header>
+    <h1>d.4eva_</h1>
+    <p class="highlight">a little insight...</p>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="social">
+        <a href="https://github.com/d4eva" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="github"></a>
+</div></header>
+
+<section id="about">
+    <h2>Who am i?</h2>
+    <p>I'm a developer who enjoys creating <strong>beautiful and functional web applications</strong>. I specialize in <strong>frontend technologies</strong> while also exploring <strong>LUA , CSS , HTML and JS</strong>.</p>
+</section>
+
+<section id="interests">
+    <h2>Interests</h2>
+    <ul>
+        <li>Frontend Development (HTML, CSS, JavaScript and LUA)</li>
+        <li>Creative Programming Projects</li>
+        <li>Open Source Contributions</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+        <div class="project">
+            <img src="https://i.ibb.co/S5h4zPD/ZLIB9lG.png" alt="WebhookDeleter">
+            <h3>Webhook Tools</h3>
+            <p>Useful Webhook tools.</p>
+            <a href="https://cassidycamp.work/whtools/" target="_blank">View the site</a>
+        </div>
+    
+</section>
+
+<section id="contact">
+    <h2>Connect with Me</h2>
+    <p>Check out my projects on <a href="https://github.com/d4eva" target="_blank"><button class="btn-donate">GitHub</button></a>.</p>
+    <p>Check out my projects on <a href="https://www.twitch.tv/d4eva_" target="_blank"><button class="btn-donate">twitch!</button></a>.</p>
+    <p>Email me at d.4eva_@d4eva.xyz</p>
+</section>
+
+<footer>
+    <p>© 2024 d.4eva_</p>
+</footer>
+
+
+
+</body></html>
